@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply text-slate-100 antialiased;
+}
+
+main {
+  @apply min-h-screen;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-12 sm:py-16 lg:py-20;
+}
+
+/* Glass cards — lets the fixed page background show through */
+.card-surface {
+  @apply rounded-xl bg-white/[0.06] shadow-soft ring-1 ring-white/10 backdrop-blur-md;
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-300 backdrop-blur-sm;
+}
+
