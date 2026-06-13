@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/closed-deals", label: "Closed Deals" },
+  { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }
 ];
@@ -27,8 +28,11 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isActive = (href: string) =>
-    pathname === href ? "text-white" : "text-slate-100/80";
+  const isActive = (href: string) => {
+    const active = href === "/" ? pathname === href : pathname.startsWith(href);
+
+    return active ? "text-white" : "text-slate-100/80";
+  };
 
   return (
     <header
@@ -105,7 +109,7 @@ export const Navbar = () => {
                 key={item.href}
                 href={item.href}
                 className={`block rounded-lg px-2 py-2.5 font-medium transition hover:bg-white/5 ${
-                  pathname === item.href ? "text-white" : "text-slate-100/80"
+                  isActive(item.href)
                 }`}
                 onClick={() => setOpen(false)}
               >

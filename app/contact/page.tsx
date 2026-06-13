@@ -6,7 +6,7 @@ export default function ContactPage() {
     <section className="section">
       <div className="container-page space-y-10">
         <SectionTitle
-          eyebrow="Contact"
+          
           title="Connect with Realty Financial Inc."
           subtitle="Reach out to discuss a purchase, sale, refinance, or simply to get oriented on current market conditions and financing expectations."
         />

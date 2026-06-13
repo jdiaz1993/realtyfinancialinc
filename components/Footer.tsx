@@ -28,6 +28,9 @@ export const Footer = () => {
               <Link href="/closed-deals" className="hover:text-white">
                 Closed Deals
               </Link>
+              <Link href="/resources" className="hover:text-white">
+                Resources
+              </Link>
               <Link href="/about" className="hover:text-white">
                 About
               </Link>

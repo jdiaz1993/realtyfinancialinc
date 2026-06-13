@@ -5,7 +5,7 @@ export default function AboutPage() {
     <section className="section">
       <div className="container-page space-y-10">
         <SectionTitle
-          eyebrow="About Realty Financial Inc"
+          
           title="A steady, numbers-focused approach to real estate and mortgage decisions."
           subtitle="Realty Financial Inc is built around a simple idea: real estate is both a place to live and a significant financial position. Clients deserve guidance that respects both."
         />

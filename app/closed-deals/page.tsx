@@ -7,7 +7,7 @@ export default function ClosedDealsPage() {
     <section className="section">
       <div className="container-page space-y-8">
         <SectionTitle
-          eyebrow="Closed Transactions"
+        
           title="A snapshot of completed deals."
           subtitle="These selected transactions illustrate a range of property types, price points, and client objectives across Los Angeles and surrounding areas."
         />

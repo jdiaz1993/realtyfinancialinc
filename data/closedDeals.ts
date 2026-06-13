@@ -3,63 +3,39 @@ import type { Property } from "@/components/PropertyCard";
 export const closedDeals: Property[] = [
   {
     id: "deal-1",
-    address: "2141 Colorado Blvd, Los Angeles, CA 90041",
-    price: "$1,125,000",
-    type: "Mixed-Use",
     description:
-      "Street-front mixed-use property in Eagle Rock with stable rental income and long-term upside.",
-    imageUrl:
-      "https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Charming traditional property with a wide front lawn, mature shade trees, and a covered front porch.",
+    imageUrl: "/realtyimages/b7f74503-b35d-45a1-a1f9-d43589acaa12.jpg"
   },
   {
     id: "deal-2",
-    address: "731 N Avenue 50, Los Angeles, CA 90042",
-    price: "$875,000",
-    type: "Single-Family Residence",
     description:
-      "Updated hillside home with views, secured with a competitive offer and favorable financing.",
-    imageUrl:
-      "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Classic bungalow-style residence with a simple front entry, trimmed hedges, and generous lawn space.",
+    imageUrl: "/realtyimages/P1010951.JPG"
   },
   {
     id: "deal-3",
-    address: "4800 York Blvd, Los Angeles, CA 90042",
-    price: "$1,480,000",
-    type: "Retail / Commercial",
     description:
-      "Well-located retail building in a high-visibility corridor, fully leased at closing.",
-    imageUrl:
-      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Hillside property with a raised street presence, garage parking, and mature landscaping around the home.",
+    imageUrl: "/realtyimages/P1020065.JPG"
   },
   {
     id: "deal-4",
-    address: "1320 Monte Vista St, Pasadena, CA 91106",
-    price: "$965,000",
-    type: "Duplex",
     description:
-      "Income-producing duplex near Pasadena amenities, structured for both owner-user and investor.",
-    imageUrl:
-      "https://images.pexels.com/photos/259597/pexels-photo-259597.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Two-story residential building with distinctive architectural details, multiple entries, and landscaped frontage.",
+    imageUrl: "/realtyimages/P1020340%20(1).JPG"
   },
   {
     id: "deal-5",
-    address: "600 S Olive St, Los Angeles, CA 90014",
-    price: "$735,000",
-    type: "Condominium",
     description:
-      "Downtown condo with strong amenities, negotiated with favorable terms in a competitive market.",
-    imageUrl:
-      "https://images.pexels.com/photos/313705/pexels-photo-313705.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Private hillside setting surrounded by mature trees, drought-tolerant planting, and a quiet approach.",
+    imageUrl: "/realtyimages/P1020463.JPG"
   },
   {
     id: "deal-6",
-    address: "1205 Hill Dr, Los Angeles, CA 90041",
-    price: "$1,320,000",
-    type: "Single-Family Residence",
     description:
-      "Character home in a sought-after neighborhood, closed with aligned financing and timeline.",
-    imageUrl:
-      "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      "Well-kept residence with fenced frontage, manicured hedges, and prominent sold signage at closing.",
+    imageUrl: "/realtyimages/P1020546.JPG"
   }
 ];
 

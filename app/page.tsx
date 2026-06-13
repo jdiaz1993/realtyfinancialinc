@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="section border-t border-white/[0.06]">
         <div className="container-page space-y-8">
           <SectionTitle
-            eyebrow="Why work with Realty Financial Inc"
+          
             title="Focused on clarity, numbers, and long-term value."
             subtitle="Real estate and mortgage decisions are financial decisions. Our role is to help you see the full picture so you can move forward with confidence."
           />
@@ -56,7 +56,7 @@ export default function HomePage() {
         <div className="container-page grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-5">
             <SectionTitle
-              eyebrow="About Realty Financial Inc"
+            
               title="Real estate and mortgage guidance under one roof."
               subtitle="Led by broker George Espinoza, Realty Financial Inc brings together transaction experience and financing insight so clients can make aligned, sustainable decisions."
             />
@@ -105,7 +105,7 @@ export default function HomePage() {
       <section className="section border-t border-white/[0.06]">
         <div className="container-page space-y-8">
           <SectionTitle
-            eyebrow="Selected Closed Deals"
+          
             title="Recent transactions that reflect a range of client goals."
             subtitle="From single-family homes to mixed-use and commercial properties, every transaction is approached with careful attention to financing, timing, and risk."
           />
@@ -129,7 +129,7 @@ export default function HomePage() {
         <div className="container-page grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-center">
           <div className="space-y-4">
             <SectionTitle
-              eyebrow="Ready to talk?"
+           
               title="Let&apos;s discuss your next move."
               subtitle="Whether you are exploring a purchase, refinance, or sale, a short conversation can help clarify options and next steps."
             />
