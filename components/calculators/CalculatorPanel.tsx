@@ -89,9 +89,9 @@ const NumberField = ({ label, value, onChange, suffix }: FieldProps) => (
 );
 
 const ResultCard = ({ label, value }: { label: string; value: string }) => (
-  <div className="flex items-start justify-between gap-4 rounded-lg bg-white/[0.04] p-4 ring-1 ring-white/10">
+  <div className="flex flex-col gap-1 rounded-lg bg-white/[0.04] p-4 ring-1 ring-white/10 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
     <p className="text-sm text-slate-300">{label}</p>
-    <p className="text-right text-base font-semibold text-slate-50">{value}</p>
+    <p className="break-words text-base font-semibold text-slate-50 sm:text-right">{value}</p>
   </div>
 );
 
@@ -437,12 +437,12 @@ const AmortizationSchedule = ({
       </div>
 
       {view === "chart" ? (
-        <div className="mt-8 overflow-x-auto">
+        <div className="mt-8 overflow-hidden">
           <svg
             viewBox="0 0 620 300"
             role="img"
             aria-label="Estimated remaining loan balance over time"
-            className="min-h-[260px] min-w-[620px]"
+            className="h-auto w-full"
           >
             {gridLines.map((line) => {
               const y = 50 + line * 52.5;
@@ -503,8 +503,8 @@ const AmortizationSchedule = ({
           </svg>
         </div>
       ) : (
-        <div className="mt-8 overflow-hidden rounded-lg ring-1 ring-white/10">
-          <table className="w-full text-left text-sm text-slate-300">
+        <div className="mt-8 overflow-x-auto rounded-lg ring-1 ring-white/10">
+          <table className="min-w-[560px] w-full text-left text-sm text-slate-300">
             <thead className="bg-white/[0.06] text-xs uppercase tracking-wide text-slate-400">
               <tr>
                 <th className="px-3 py-3">Month</th>

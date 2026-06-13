@@ -42,42 +42,31 @@ export const Navbar = () => {
           : "border-transparent bg-gradient-to-b from-black/40 via-black/10 to-transparent"
       }`}
     >
-      <div className="container-page flex h-16 items-center justify-between gap-4 text-slate-100 sm:h-20">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
+      <div className="container-page flex h-16 items-center justify-between gap-3 text-slate-100 sm:h-20 sm:gap-4">
+        <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <Image
             src="/nav-logo.png"
             alt="Realty Financial Inc"
             width={200}
             height={56}
-            className="h-9 w-auto max-w-[140px] shrink-0 object-contain object-left drop-shadow-md sm:h-11 sm:max-w-[180px]"
+            className="h-8 w-auto max-w-[96px] shrink-0 object-contain object-left drop-shadow-md sm:h-10 sm:max-w-[140px] lg:h-11 lg:max-w-[180px]"
             priority
           />
-          <div className="flex min-w-0 flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-wide text-white sm:text-base">
+          <div className="hidden min-w-0 flex-col leading-tight min-[420px]:flex">
+            <span className="truncate text-xs font-semibold tracking-wide text-white sm:text-sm lg:text-base">
               Realty Financial Inc
             </span>
-            <span className="text-[11px] text-slate-200/80 sm:text-xs">
+            <span className="truncate text-[10px] text-slate-200/80 sm:text-[11px] lg:text-xs">
               Real Estate &amp; Mortgage Broker
             </span>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium md:ml-auto md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`transition hover:text-white ${isActive(item.href)}`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
         <button
           type="button"
           aria-label="Toggle navigation"
-          className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/40 bg-black/20 text-slate-50 shadow-soft backdrop-blur-sm md:hidden"
+          aria-expanded={open}
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/40 bg-black/20 text-slate-50 shadow-soft backdrop-blur-sm transition hover:bg-white/10"
           onClick={() => setOpen((prev) => !prev)}
         >
           <span className="sr-only">Open main menu</span>
@@ -102,20 +91,22 @@ export const Navbar = () => {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-black/80 backdrop-blur-sm md:hidden">
-          <div className="container-page space-y-2 py-3 text-sm">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`block rounded-lg px-2 py-2.5 font-medium transition hover:bg-white/5 ${
-                  isActive(item.href)
-                }`}
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+        <div className="border-t border-white/10 bg-black/80 backdrop-blur-sm">
+          <div className="container-page py-3 text-sm">
+            <nav className="ml-auto grid gap-2 md:max-w-xs">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`block rounded-lg px-2 py-2.5 font-medium transition hover:bg-white/5 ${
+                    isActive(item.href)
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
           </div>
         </div>
       )}

@@ -76,9 +76,9 @@ export const Footer = () => {
             <p className="text-xs text-slate-500 sm:max-w-xs sm:text-left">
               © {year} Realty Financial Inc. All rights reserved. Real Estate &amp; Mortgage Broker.
             </p>
-            <div className="inline-flex flex-wrap items-center gap-0">
+            <div className="flex flex-wrap items-center justify-center gap-0 sm:justify-end">
               {/* Equal Housing first, REALTOR second; same box + overlap toward REALTOR */}
-              <div className="relative h-14 w-44 shrink-0 sm:h-16 sm:w-52">
+              <div className="relative h-12 w-36 shrink-0 sm:h-16 sm:w-52">
                 <Image
                   src="/footer-equal-housing.png"
                   alt="Equal Housing Opportunity"
@@ -87,7 +87,7 @@ export const Footer = () => {
                   className="object-contain object-center invert opacity-90"
                 />
               </div>
-              <div className="relative h-14 w-44 shrink-0 sm:h-16 sm:w-52 -ml-14 sm:-ml-20">
+              <div className="relative -ml-10 h-12 w-36 shrink-0 sm:-ml-20 sm:h-16 sm:w-52">
                 <Image
                   src="/footer-realtor.png"
                   alt="REALTOR®"

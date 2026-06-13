@@ -28,11 +28,11 @@ export default function ResourceDetailPage({ params }: ResourceDetailPageProps) 
     <section className="section">
       <div className="container-page space-y-10">
         <div className="space-y-4">
-          <p className="text-sm text-slate-400">
+          <p className="break-words text-xs text-slate-400 sm:text-sm">
             Realty Financial Inc <span className="text-slate-600">&gt;</span> Calculators{" "}
             <span className="text-slate-600">-</span> {resource.title}
           </p>
-          <div className="relative h-56 overflow-hidden rounded-xl ring-1 ring-white/10 sm:h-72 lg:h-96">
+          <div className="relative h-44 overflow-hidden rounded-xl ring-1 ring-white/10 sm:h-72 lg:h-96">
             <Image
               src="/realtyimages/b7f74503-b35d-45a1-a1f9-d43589acaa12.jpg"
               alt="Residential property"
@@ -44,7 +44,7 @@ export default function ResourceDetailPage({ params }: ResourceDetailPageProps) 
           </div>
         </div>
 
-        <nav className="flex gap-6 overflow-x-auto border-b border-white/10 text-sm text-slate-400">
+        <nav className="-mx-4 flex gap-5 overflow-x-auto border-b border-white/10 px-4 text-sm text-slate-400 sm:mx-0 sm:gap-6 sm:px-0">
           {resources.map((item) => {
             const active = item.slug === resource.slug;
 
